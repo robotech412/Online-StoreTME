@@ -1,0 +1,55 @@
+header{
+    background: #2c3e50;
+    color: #fff;
+}
+.main .row{
+    display: flex;
+    justify-content: center;
+}
+.col-md-4 img{
+    margin-top: 40px;
+    width: 100%;
+    object-fit: cover;
+    max-width: 350px;
+}
+.col-md-8{ 
+    margin: 5px 0px 0 0px;
+}
+.container{
+    text-align: center;
+}
+.informacion{
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    text-align: left;
+    line-height: 36px;
+   
+}
+.marca{
+    font-size: 20px!important;
+    line-height: 24px!important;
+    color: #0066c0;
+    font-family: "Amazon Ember",Arial,sans-serif;  
+}
+.precio{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 25px!important;
+    line-height: 24px!important;
+    color: #B12704!important;
+}
+.text-bold{
+    font-weight: 700!important;
+}
+.descripcion{
+    color: #555!important;
+    font-size: 25px;
+    line-height: 36px;
+}
+.dropdown-highlight{
+    margin: 0px 50px 0 50px;
+}
+.list-item{
+    color: #111;
+}
