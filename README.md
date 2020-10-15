@@ -1,3 +1,4 @@
+![error](https://github.com/robotech412/Online-StoreTME/blob/development/images/logo_navbar.jpg)
 # Proyecto "TME"
 Proyecto de séptimo semestre de la materia de programación web
 ## Descripción
