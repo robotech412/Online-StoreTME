@@ -16,5 +16,7 @@ ofrezcan productos de primera necesidad, lo cual ha provocado que un gran númer
     - Ropa
     - Accesorios
     
-
+## Estado del proyecto
+Actualmente el proyecto se encuentra en desarrollo, más adelante se iran agregando más características, como tambien 
+funcionalidad. Ya que ahora se encuentra en la fase de la vista.
 
