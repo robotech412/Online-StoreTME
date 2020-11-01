@@ -31,6 +31,9 @@ funcionalidad. Ya que ahora se encuentra en la fase de la vista.
 - Catalogo de zapatos.
 ![error](https://github.com/robotech412/Online-StoreTME/blob/development/images/categoria_zapatos.png)
 
+---
+# **INFO**
+---
 # Catalogo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.7.
