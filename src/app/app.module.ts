@@ -11,6 +11,7 @@ import { ProductosComponent } from './vista/productos/productos.component';
 import { RopaComponent } from './vista/ropa/ropa.component';
 import { NavegacionComponent } from './vista/navegacion/navegacion.component';
 import { InicioComponent } from './vista/inicio/inicio.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { InicioComponent } from './vista/inicio/inicio.component';
     RopaComponent,
     NavegacionComponent,
     InicioComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
