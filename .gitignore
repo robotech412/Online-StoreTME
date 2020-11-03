@@ -1,46 +1,24 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
-/dist
-/tmp
-/out-tsc
-# Only exists if Bazel was run
-/bazel-out
+2020-10-08-22-46-09.039-VBoxSVC-25992.log
 
-# dependencies
-/node_modules
+Vagrantfile
 
-# profiling files
-chrome-profiler-events*.json
-speed-measure-plugin*.json
+.vagrant/machines/default/virtualbox/action_provision
 
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+.vagrant/machines/default/virtualbox/action_set_name
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+.vagrant/machines/default/virtualbox/box_meta
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
+.vagrant/machines/default/virtualbox/creator_uid
 
-# System Files
-.DS_Store
-Thumbs.db
+.vagrant/machines/default/virtualbox/id
+
+.vagrant/machines/default/virtualbox/index_uuid
+
+.vagrant/machines/default/virtualbox/private_key
+
+.vagrant/machines/default/virtualbox/synced_folders
+
+.vagrant/machines/default/virtualbox/vagrant_cwd
+
+.vagrant/rgloader/loader.rb
