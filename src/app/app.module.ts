@@ -9,10 +9,9 @@ import { AppComponent } from './app.component';
 import { DetallesComponent } from './vista/detalles/detalles.component';
 import { ProductosComponent } from './vista/productos/productos.component';
 import { RopaComponent } from './vista/ropa/ropa.component';
-import { NavegacionComponent } from './vista/navegacion/navegacion.component';
 import { InicioComponent } from './vista/inicio/inicio.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { FooterComponent } from './footer/footer.component';
+import { NavbarComponent } from './vista/navbar/navbar.component';
+import { FooterComponent } from './vista/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +19,6 @@ import { FooterComponent } from './footer/footer.component';
     DetallesComponent,
     ProductosComponent,
     RopaComponent,
-    NavegacionComponent,
     InicioComponent,
     NavbarComponent,
     FooterComponent,
