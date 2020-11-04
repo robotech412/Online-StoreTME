@@ -16,12 +16,12 @@ import { FooterComponent } from './vista/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    DetallesComponent,
-    ProductosComponent,
-    RopaComponent,
     InicioComponent,
     NavbarComponent,
     FooterComponent,
+    DetallesComponent,
+    ProductosComponent,
+    RopaComponent,
   ],
   imports: [
     BrowserModule,
