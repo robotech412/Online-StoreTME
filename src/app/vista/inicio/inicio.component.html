@@ -1,9 +1,112 @@
 <div>
 <app-navbar></app-navbar>
 </div>
-<div>
-<main class="text-center page landing-page">
+  <!-- Icons Grid -->
+  <section class="features-icons bg-light text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-screen-desktop m-auto text-primary"></i>
+            </div>
+            <h3>Fully Responsive</h3>
+            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-layers m-auto text-primary"></i>
+            </div>
+            <h3>Bootstrap 4 Ready</h3>
+            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-check m-auto text-primary"></i>
+            </div>
+            <h3>Easy to Use</h3>
+            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+  
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Fully Responsive Design</h2>
+            <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Updated For Bootstrap 4</h2>
+            <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>Easy to Use &amp; Customize</h2>
+            <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Testimonials -->
+  <section class="testimonials text-center bg-light">
+    <div class="container">
+      <h2 class="mb-5">What people are saying...</h2>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
+            <h5>Margaret E.</h5>
+            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
+            <h5>Fred S.</h5>
+            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+            <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
+            <h5>Sarah W.</h5>
+            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--main class="text-center page landing-page">
     <section class="clean-block clean-info dark">
+        <header class="masthead">
+            <div class="container h-100">
+              <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                  <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
+                  <p class="lead">A great starter layout for a landing page</p>
+                </div>
+              </div>
+            </div>
+          </header>
         <div class="container">
             <div class="block-heading">
                 <h2 class="text-info">Tu mejor estilo</h2>
@@ -11,38 +114,7 @@
             </div>
         </div>
     </section>
-    <section class="clean-block about-us">
-        <div class="container">
-            <!--iv class="block-heading">
-                <h2 class="text-info">About Us</h2>
-                <p>Aqui puede ir algo acerca del negocio</p>
-            </div-->
-        </div>
-    </section>
-    <section class="clean-block features">
-        <!-- Start: Bold BS4 Gallery with Image Thumbnails Style -->
-        <div class="container">
-            <h1>Categorias de productos</h1>
-            <div class="row text-center text-lg-left">
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="Zapatos/zapatos.html"><img class="img-thumbnail img-fluid" src="/assets/img/IMG-20201007-WA0045.jpg?h=4698a9124e213b3481284ea001fb6a82" alt=" "><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Tennis</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/IMG-20201003-WA0060.jpg?h=b308c4aa4a53ecf4817c2ce520714cd5"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Ropa</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/IMG-20201013-WA0100.jpg?h=423173a75db98a79ffc0fab2c999bcc0"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Relojes</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/gorras.jpg?h=612f405d9a46d90715610470303401ab"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Gorras</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/bolsos.jpg?h=24656eef4a663a71db2c432faa6692cd"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Bolsos</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/botas_1.jpg?h=4d942abf383d80d5378a5de24b03bfd9"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Zapatos y botas</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/IMG-20200918-WA0011.jpg?h=1f70a74c7a08cd39809d276b1d603122"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Ropa deportiva</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/lentes_sol.jpg?h=1cce6b191d41a46b87d82c683280f7df"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Lentes</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/aridots.jpg?h=1c2a13a157eb6022340494b54ceab760"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Inpods &amp; Airdots</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/bocinas.jpg?h=c4c0410d077606815112f6e25d73c65b"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Bocinas</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/mochilas.jpg?h=4c24304ccf380876bb4085ad58bec4df"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Mochilas</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/paraguas.jpg?h=50e0f4e9183b90d89801aa293ea3524a"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Paraguas</h1></a></div>
-                <div class="col-6 col-md-4 col-lg-3"><a class="d-block mb-4 h-100" href="#"><img class="img-thumbnail img-fluid" alt=" " src="/assets/img/importado.jpg?h=621c5ac6c0a7a09db056f6e9752e1983"><h1 style="text-align: center;color: rgba(0,0,0,0.9);">Productos importados</h1></a></div>
-            </div>
-        </div>
-        <!-- End: Bold BS4 Gallery with Image Thumbnails Style -->
-    </section>
-</main>
-</div>
+</main-->
 <div>
 <app-footer></app-footer>
 </div>

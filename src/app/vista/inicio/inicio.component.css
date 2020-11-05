@@ -1,0 +1,36 @@
+.testimonials .testimonial-item .img{
+padding-top: 7rem;
+padding-bottom: 7rem;
+max-width: 18rem;
+max-width: 12rem;
+box-shadow: 0px 5px 5px 0px gray-500;
+}
+
+.showcase .showcase-img .showcase-text{
+padding: 3rem;
+min-height: 30rem;
+background-size: cover;
+@media (min-width: 768px);
+padding: 7rem; 
+}
+
+.features-icons {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    .features-icons-item {
+      max-width: 20rem;
+      .features-icons-icon {
+        height: 7rem;
+        i {
+          font-size: 4.5rem;
+        }
+      }
+      &:hover {
+        .features-icons-icon {
+          i {
+            font-size: 5rem;
+          }
+        }
+      }
+    }
+}  

@@ -3,17 +3,20 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { DetallesComponent } from "./vista/detalles/detalles.component";
 
-import { ProductosComponent } from "./vista/productos/productos.component";
+import { ZapatosComponent } from "./vista/zapatos/zapatos.component";
 
 import { RopaComponent } from "./vista/ropa/ropa.component";
 
 import { InicioComponent } from './vista/inicio/inicio.component';
 
+import { ProductosComponent } from './vista/productos/productos.component';
+
 const app_routes: Routes = [
     { path: 'Detalles', component: DetallesComponent },
-    { path: 'Productos', component: ProductosComponent },
+    { path: 'Zapatos', component: ZapatosComponent },
     { path: 'Ropa', component: RopaComponent },
-    { path: 'Inicio', component: InicioComponent},
+    { path: 'Productos', component: ProductosComponent },
+    { path: 'Inicio', component: InicioComponent },
     { path: '**', pathMatch: 'full', redirectTo:'Inicio' },
 ];
 
