@@ -1,0 +1,23 @@
+<div class="highlight-blue">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Highlight</h2>
+            <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+        </div>
+        <div class="buttons"><a class="btn btn-primary" role="button" href="#">Primary</a></div>
+    </div>
+</div>
+/* estilos de contenedor de testimonios de clientes*/
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+} 
