@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-inicio',
   templateUrl: './inicio.component.html',
   styles: [
+      './inicio.component.css'
   ]
 })
 export class InicioComponent implements OnInit {
