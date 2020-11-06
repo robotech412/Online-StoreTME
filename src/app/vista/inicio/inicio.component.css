@@ -1,36 +1,23 @@
-.testimonials .testimonial-item .img{
-padding-top: 7rem;
-padding-bottom: 7rem;
-max-width: 18rem;
-max-width: 12rem;
-box-shadow: 0px 5px 5px 0px gray-500;
+<div class="highlight-blue">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center">Highlight</h2>
+            <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+        </div>
+        <div class="buttons"><a class="btn btn-primary" role="button" href="#">Primary</a></div>
+    </div>
+</div>
+/* estilos de contenedor de testimonios de clientes*/
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
 }
 
-.showcase .showcase-img .showcase-text{
-padding: 3rem;
-min-height: 30rem;
-background-size: cover;
-@media (min-width: 768px);
-padding: 7rem; 
+.testimonials .testimonial-item {
+  max-width: 18rem;
 }
 
-.features-icons {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-    .features-icons-item {
-      max-width: 20rem;
-      .features-icons-icon {
-        height: 7rem;
-        i {
-          font-size: 4.5rem;
-        }
-      }
-      &:hover {
-        .features-icons-icon {
-          i {
-            font-size: 5rem;
-          }
-        }
-      }
-    }
-}  
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+} 
