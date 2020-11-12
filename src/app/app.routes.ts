@@ -11,12 +11,15 @@ import { InicioComponent } from './vista/inicio/inicio.component';
 
 import { ProductosComponent } from './vista/productos/productos.component';
 
+import { ContactoComponent } from './vista/contacto/contacto.component';
+
 const app_routes: Routes = [
     { path: 'Detalles', component: DetallesComponent },
     { path: 'Zapatos', component: ZapatosComponent },
     { path: 'Ropa', component: RopaComponent },
     { path: 'Productos', component: ProductosComponent },
     { path: 'Inicio', component: InicioComponent },
+    { path: 'Contacto', component: ContactoComponent },
     { path: '**', pathMatch: 'full', redirectTo:'Inicio' },
 ];
 
