@@ -14,6 +14,7 @@ import { NavbarComponent } from './vista/navbar/navbar.component';
 import { FooterComponent } from './vista/footer/footer.component';
 import { ProductosComponent } from './vista/productos/productos.component';
 import { ContactoComponent } from './vista/contacto/contacto.component';
+import { LoginComponent } from './vista/login/login.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactoComponent } from './vista/contacto/contacto.component';
     RopaComponent,
     ProductosComponent,
     ContactoComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
