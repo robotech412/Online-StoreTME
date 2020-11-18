@@ -12,7 +12,10 @@ import { InicioComponent } from './vista/inicio/inicio.component';
 import { ProductosComponent } from './vista/productos/productos.component';
 
 import { ContactoComponent } from './vista/contacto/contacto.component';
+
 import { LoginComponent } from './vista/login/login.component';
+
+import { DashboardComponent } from './vista/dashboard/dashboard.component';
 
 const app_routes: Routes = [
     { path: 'Detalles', component: DetallesComponent },
@@ -21,8 +24,10 @@ const app_routes: Routes = [
     { path: 'Productos', component: ProductosComponent },
     { path: 'Inicio', component: InicioComponent },
     { path: 'Contacto', component: ContactoComponent },
-    { path: 'Login', component: LoginComponent},
+    { path: 'Login', component: LoginComponent },
+    {path: 'Dashboard',component:DashboardComponent},
+    
     { path: '**', pathMatch: 'full', redirectTo:'Inicio' },
 ];
 
-export const app_routing = RouterModule.forRoot(app_routes);
+export const app_routing = RouterModule.forRoot(app_routes, { relativeLinkResolution: 'legacy' });

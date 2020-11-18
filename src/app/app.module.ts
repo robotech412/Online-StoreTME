@@ -15,6 +15,12 @@ import { FooterComponent } from './vista/footer/footer.component';
 import { ProductosComponent } from './vista/productos/productos.component';
 import { ContactoComponent } from './vista/contacto/contacto.component';
 import { LoginComponent } from './vista/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CookieService } from 'ngx-cookie-service';
+import { DashboardComponent } from './vista/dashboard/dashboard.component';
+
+
 
 @NgModule({
   declarations: [
@@ -28,13 +34,15 @@ import { LoginComponent } from './vista/login/login.component';
     ProductosComponent,
     ContactoComponent,
     LoginComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    app_routing
+    FormsModule,
+    app_routing,
   ],
-  providers: [],
+  providers: [CookieService], //modulo de angular para usar cookies
   bootstrap: [AppComponent]
 })
 export class AppModule { }
