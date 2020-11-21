@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "usuarios-da896": {
+      "hosting": {
+        "Catalogo": [
+          "usuarios-da896"
+        ]
+      }
+    }
+  }
+}

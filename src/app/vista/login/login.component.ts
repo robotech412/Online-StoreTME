@@ -1,30 +1,36 @@
 import { Component, OnInit } from '@angular/core';
+import { UserI } from 'src/app/shared/models/user.interface';
+import { AuthService } from 'src/app/shared/services/auth.service';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import { UsuariosService } from 'src/app/usuarios/usuarios.service';
+
+import { getMaxListeners } from 'process';
 
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  styleUrls: ['./login.component.css'],
 })
-export class LoginComponent {
-  email: string;
-  password: string;
 
+export class LoginComponent implements OnInit {
 
-  constructor(public usuariosService: UsuariosService, public router: Router) { }
+  constructor(private authSvc: AuthService, private route: Router) { }
 
-  login() {
-    const user = { email: this.email, password: this.password };
-    this.usuariosService.login(user).subscribe(data => {
-      this.usuariosService.setToken(data.token);
-      this.router.navigateByUrl('/Dashboard');
+  loginForm = new FormGroup({
+    email: new FormControl('', Validators.required),
+    password: new FormControl('', Validators.required),
+  });
 
-    },
-      error => {
-      console.log(error);
-    });
+  ngOnInit() { }
+
+  onLogin(form: UserI) {
+    this.authSvc
+      .loginByEmail(form)
+      .then(res => {
+        console.log('Successfully', res);
+        this.route.navigate(['Admin']);
+      })
+      .catch(err => console.log('Error', err));
   }
-
 }

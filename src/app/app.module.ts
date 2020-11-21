@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 //Rutas
 import { app_routing } from "./app.routes";
 
@@ -16,11 +15,23 @@ import { ProductosComponent } from './vista/productos/productos.component';
 import { ContactoComponent } from './vista/contacto/contacto.component';
 import { LoginComponent } from './vista/login/login.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { CookieService } from 'ngx-cookie-service';
-import { DashboardComponent } from './vista/dashboard/dashboard.component';
+import { AdminComponent } from './vista/admin/admin.component';
+
+/* Firebase */
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule, BUCKET } from '@angular/fire/storage';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+
+import { environment } from 'src/environments/environment';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
+/* material*/
+
+import { MaterialModule } from './material.module';
+import { LoginModule } from './vista/login/login.module';
+import { AdminModule } from './vista/admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -32,17 +43,23 @@ import { DashboardComponent } from './vista/dashboard/dashboard.component';
     ZapatosComponent,
     RopaComponent,
     ProductosComponent,
-    ContactoComponent,
-    LoginComponent,
-    DashboardComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
+    AngularFireStorageModule,
+    AngularFireAuthModule,
     AppRoutingModule,
     FormsModule,
-    app_routing,
+    ReactiveFormsModule,
+    MaterialModule,
+    LoginModule,
+    AdminModule,
+    app_routing
   ],
-  providers: [CookieService], //modulo de angular para usar cookies
-  bootstrap: [AppComponent]
+  providers: [{ provide: BUCKET, useValue: 'gs://usuarios-da896.appspot.com' }], //modulo de angular para usar cookies
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
