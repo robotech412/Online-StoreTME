@@ -1,0 +1,39 @@
+<div>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light clean-navbar">
+          <div class="container"><a class="navbar-brand text-uppercase logo" href="#" style="font-family: Cookie, cursive;color: rgb(0,0,0);font-size: 24px;text-align: center;"><strong>&nbsp;</strong><img src="/assets/img/Logo.jpg?h=2a2d844f2eda2b6a0e4537d7b93a5754" style="width: 200px;"><br></a><button data-toggle="collapse"
+                  class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+              <div class="collapse navbar-collapse" id="navcol-1">
+                  <ul class="nav navbar-nav ml-auto" style="box-shadow: 0px 0px;">
+                      <li class="nav-item"><a class="nav-link active" routerLink="/Inicio" style="font-size: 20px;">Home</a></li>
+                      <li class="nav-item"><a class="nav-link active" routerLink="/Productos" style="font-size: 20px;">Productos</a></li>
+                      <li class="nav-item"><a class="nav-link active" routerLink="/Contacto" style="font-size: 20px;">Contacto</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <div>
+              <!--Separador -->
+      <section class="clean-block clean-info dark">
+        <div class="container">
+        </div>
+    </section>
+    </div>
+<mat-card>
+  <mat-card-title>Login</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+      <p>
+        <mat-form-field>
+          <input type="text" style="font-size: 20px; "matInput placeholder="Usuario/Correo" formControlName="email" />
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field>
+          <input type="text"style="font-size: 20px;  "matInput placeholder="Contraseña" formControlName="password" />
+        </mat-form-field>
+      </p>
+      <button type="submit" style="font-size: 20px; "mat-raised-button color="primary">Login</button>
+    </form>
+  </mat-card-content>
+</mat-card>
+</div>

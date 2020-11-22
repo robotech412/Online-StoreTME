@@ -20,7 +20,7 @@ const app_routes: Routes = [
     { path: 'Productos', component: ProductosComponent },
     { path: 'Inicio', component: InicioComponent },
     { path: 'Contacto', component: ContactoComponent },
-    { path: '**', pathMatch: 'full', redirectTo:'Inicio' },
+    { path: '**', pathMatch: 'full', redirectTo: 'Inicio' },
 ];
 
-export const app_routing = RouterModule.forRoot(app_routes);
+export const app_routing = RouterModule.forRoot(app_routes, { relativeLinkResolution: 'legacy' });
