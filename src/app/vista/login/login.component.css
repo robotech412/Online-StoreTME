@@ -16,6 +16,16 @@ display: center;
 justify-content: center;
 }
 
+.row{
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+
 cat-card-content{
     display: flex;
     justify-content: center;
@@ -28,4 +38,9 @@ button{
 mat-card{
     width: 500px;
     height: 300px;
+}
+body { padding-top: 70px; }
+.nav-item .nav-link{
+    font-size: 25px;
+    color: rgb(0,0,0);
 }
