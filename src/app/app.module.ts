@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+
 //Rutas
 import { app_routing } from "./app.routes";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DetallesComponent } from './vista/detalles/detalles.component';
-import { ZapatosComponent } from './vista/zapatos/zapatos.component';
-import { RopaComponent } from './vista/ropa/ropa.component';
 import { InicioComponent } from './vista/inicio/inicio.component';
 import { NavbarComponent } from './vista/navbar/navbar.component';
 import { FooterComponent } from './vista/footer/footer.component';
@@ -33,6 +33,8 @@ import { MaterialModule } from './material.module';
 import { LoginModule } from './vista/login/login.module';
 import { AdminModule } from './vista/admin/admin.module';
 
+import { ProductosService } from './services/productos.service'
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,8 +42,6 @@ import { AdminModule } from './vista/admin/admin.module';
     NavbarComponent,
     FooterComponent,
     DetallesComponent,
-    ZapatosComponent,
-    RopaComponent,
     ProductosComponent,
     ContactoComponent
   ],
@@ -57,9 +57,11 @@ import { AdminModule } from './vista/admin/admin.module';
     MaterialModule,
     LoginModule,
     AdminModule,
+    HttpClientModule,
     app_routing
   ],
-  providers: [{ provide: BUCKET, useValue: 'gs://usuarios-da896.appspot.com' }], //modulo de angular para usar cookies
+  providers: [{ provide: BUCKET, useValue: 'gs://usuarios-da896.appspot.com' },
+ProductosService], //modulo de angular para usar cookies
   bootstrap: [AppComponent],
 })
 export class AppModule { }

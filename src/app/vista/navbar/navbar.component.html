@@ -1,19 +1,20 @@
-<div>
-<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light clean-navbar">
-        <div class="container"><a class="navbar-brand text-uppercase logo" href="#" style="font-family: Cookie, cursive;color: rgb(0,0,0);font-size: 24px;text-align: center;"><strong>&nbsp;</strong><img src="/assets/img/Logo.jpg?h=2a2d844f2eda2b6a0e4537d7b93a5754" style="width: 200px;"><br></a><button data-toggle="collapse"
-                class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="nav navbar-nav ml-auto" style="box-shadow: 0px 0px;">
-                    <li class="nav-item"><a class="nav-link active" routerLink="/Inicio" style="font-size: 20px;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" routerLink="/Productos" style="font-size: 20px;">Productos</a></li>
-                    <li class="nav-item"><a class="nav-link active" routerLink="/Contacto" style="font-size: 20px;">Contacto</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!--Separador -->
-    <section class="clean-block clean-info dark">
-        <div class="container">
-        </div>
-    </section>
+<header class="navbar navbar-expand-md navbar-light bg-light flex-md-row bd-navbar">
+    <a class="navbar-brand" [routerLink]="['/inicio']"> <img src="/assets/logo_navbar.png"  height="30" alt="" loading="lazy"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link text-dark" [routerLink]="['/inicio']">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" [routerLink]="['/productos']">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" [routerLink]="['/contacto']">Contacto</a>
+            </li>
+        </ul>
     </div>
+  </header>
