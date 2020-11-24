@@ -28,12 +28,14 @@ export class ProductosComponent implements OnInit {
   }
 
   deleteProducto(id: string){
-    this.productosService.deleteProducto(id).subscribe(
-      res => {
-        console.log(res);
-        this.getProductos();
-      },
-      err => console.error(err)
-    )
+    if (confirm('Seguro que desea Eliminar este producto')){
+      this.productosService.deleteProducto(id).subscribe(
+        res => {
+          console.log(res);
+          this.getProductos();
+        },
+        err => console.error(err)
+      )
+    }
   }
 }
