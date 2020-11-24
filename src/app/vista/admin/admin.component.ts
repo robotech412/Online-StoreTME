@@ -21,6 +21,6 @@ constructor(public router: Router){}
     this.router.navigateByUrl('dashboard/about');
   }
   logMeOut() {
-    this.router.navigateByUrl('login');
+    this.router.navigateByUrl('inicio');
   }
 }
