@@ -12,14 +12,12 @@ import { ProductoFormComponent } from '../producto-form/producto-form.component'
 
 const appRoutes: Routes = [
   {
-    path: 'dashboard', component: AdminComponent, 
-      { path: 'dashboard', component: AdminComponent },
-  { path: 'dashboard/add', component: ProductoFormComponent}];
+    path: 'dashboard', component: AdminComponent,
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
     ]
-  }
+  },{ path: 'dashboard/add', component: ProductoFormComponent}
 ];
 
 @NgModule({
@@ -27,3 +25,5 @@ const appRoutes: Routes = [
   exports: [RouterModule]
 })
 export class AdminRoutingModule { }
+
+//{ path: 'dashboard/add', component: ProductoFormComponent}];
