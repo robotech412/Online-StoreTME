@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {  Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminComponent implements OnInit {
 
-  constructor() { }
+ // constructor() { }
+constructor(public router: Router){}
 
   ngOnInit(): void {
   }
 
+  redirectToHome() {
+    this.router.navigateByUrl('dashboard/home');
+  }
+  redirectToAbout() {
+    this.router.navigateByUrl('dashboard/about');
+  }
+  logMeOut() {
+    this.router.navigateByUrl('login');
+  }
 }

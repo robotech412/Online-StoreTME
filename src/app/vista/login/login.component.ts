@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
       .loginByEmail(form)
       .then(res => {
         console.log('Successfully', res);
-        this.route.navigate(['Admin']);
+        this.route.navigate(['dashboard']);
       })
       .catch(err => console.log('Error', err));
   }

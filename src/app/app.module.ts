@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 //Rutas
 import { app_routing } from "./app.routes";
-
+import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DetallesComponent } from './vista/detalles/detalles.component';
@@ -35,6 +35,7 @@ import { LoginModule } from './vista/login/login.module';
 import { AdminModule } from './vista/admin/admin.module';
 
 import { ProductosService } from './services/productos.service'
+
 
 @NgModule({
   declarations: [
