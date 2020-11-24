@@ -1,0 +1,42 @@
+
+<div class="col-md-4 offset-md-2 mt-5">
+    <div class="card">
+      <div class="card-body">
+        <form action="">
+          <div class="form-group">
+            <input type="text" name="marca" [(ngModel)]="producto.marca" placeholder="marca" class="form-control" autofocus>
+          </div>
+          <div class="form-group">
+            <input type="number" name="precio" [(ngModel)]="producto.precio" placeholder="Precio" class="form-control">
+          </div>
+          <div class="form-group">
+            <textarea name="description" rows="2" [(ngModel)]="producto.descripcion" placeholder="Description" class="form-control"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="text" name="color" [(ngModel)]="producto.color" placeholder="Colores" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="text" name="tallas" [(ngModel)]="producto.tallas" placeholder="Tallas" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="number" name="cantidad" [(ngModel)]="producto.cantidad" placeholder="Cantidad Productos" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="url" name="image URL" [(ngModel)]="producto.image" placeholder="Image" class="form-control">
+          </div>
+          <button class="btn btn-success btn-block" (click)="edit ? updateProducto() : saveNewProducto()">
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mt-5">
+    <div class="card card-body text-center">
+      <img [src]="producto.image == '' ? '/assets/noimage.png' : producto.image" class="card-img-top">
+        <h3>{{producto.id_producto}}. {{producto.marca == '' ? 'Marca del producto' : producto.marca}}</h3>
+        <p>{{producto.descripcion == '' ? 'Escriba la descripción' : producto.descripcion}}</p>
+        <p>{{producto.fecha_ingreso | date: 'yyyy-MM-dd'}}</p>
+    </div>
+  </div>

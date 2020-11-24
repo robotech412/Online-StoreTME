@@ -1,16 +1,52 @@
 
-import { RouterModule, Routes } from '@angular/router';
-import { DetallesComponent } from "./vista/detalles/detalles.component";
-import { InicioComponent } from './vista/inicio/inicio.component';
-import { ProductosComponent } from './vista/productos/productos.component';
+
 import { ContactoComponent } from './vista/contacto/contacto.component';
 
-const app_routes: Routes = [
-    { path: 'productos/detalles/:id', component: DetallesComponent },
-    { path: 'productos', component: ProductosComponent },
-    { path: 'Inicio', component: InicioComponent },
-    { path: 'contacto', component: ContactoComponent },
-    { path: '**', pathMatch: 'full', redirectTo: 'Inicio' },
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { InicioComponent } from './vista/inicio/inicio.component'
+import { ProductosComponent } from './vista/productos/productos.component';
+import { ProductoFormComponent } from './vista/producto-form/producto-form.component';
+import { DetallesComponent } from './vista/detalles/detalles.component'
+
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: '/inicio',
+    pathMatch: 'full'
+  },
+  {
+    path: 'inicio',
+    component: InicioComponent
+  },
+  {
+    path: 'productos',
+    component: ProductosComponent
+  },
+  {
+    path: 'productos/add',
+    component: ProductoFormComponent
+  },
+  {
+    path: 'productos/edit/:id',
+    component: ProductoFormComponent
+  },
+  {
+    path: 'productos/detalles/:id',
+    component: DetallesComponent
+  },
+  {
+    path: 'contacto',
+    component: ContactoComponent
+  }
 ];
 
-export const app_routing = RouterModule.forRoot(app_routes, { relativeLinkResolution: 'legacy' });
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+
+export const app_routing = RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' });

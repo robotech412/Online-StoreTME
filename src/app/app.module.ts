@@ -16,6 +16,7 @@ import { ContactoComponent } from './vista/contacto/contacto.component';
 import { LoginComponent } from './vista/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { AdminComponent } from './vista/admin/admin.component';
+import { ProductoFormComponent } from './vista/producto-form/producto-form.component';
 
 /* Firebase */
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -43,7 +44,8 @@ import { ProductosService } from './services/productos.service'
     FooterComponent,
     DetallesComponent,
     ProductosComponent,
-    ContactoComponent
+    ContactoComponent,
+    ProductoFormComponent
   ],
   imports: [
     BrowserModule,
