@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
   },
   "private": true,
   "dependencies": {
@@ -23,6 +25,8 @@
     "@angular/platform-browser-dynamic": "~10.1.6",
     "@angular/router": "~10.1.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "admin-lte": "^3.1.0-rc",
+    "concurrently": "^5.3.0",
     "firebase": "^7.0.0 || ^8.0.0",
     "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
