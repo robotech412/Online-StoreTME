@@ -23,4 +23,7 @@ constructor(public router: Router){}
   logMeOut() {
     this.router.navigateByUrl('inicio');
   }
+  redirectToproductos(){
+    this.router.navigateByUrl('dashboard/productos');
+  }
 }

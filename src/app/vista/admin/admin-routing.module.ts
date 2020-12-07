@@ -7,6 +7,7 @@ import { LoginModule } from '../login/login.module';
 
 import { AdminComponent } from './admin.component';
 import { ProductoFormComponent } from '../producto-form/producto-form.component';
+import { ProductosComponent } from '../productos/productos.component';
 
 //const routes: Routes = [{ path: 'Admin', component: AdminComponent }];
 
@@ -16,6 +17,7 @@ const appRoutes: Routes = [
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
+      { path: 'productos', component: ProductosComponent },
     ]
   },{ path: 'dashboard/add', component: ProductoFormComponent}
 ];

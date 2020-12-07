@@ -1,15 +1,15 @@
-<nav class="main-header navbar navbar-expand navbar-white navbar-light">
+<nav class="main-header navbar navbar-expand navbar-purple navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       
       <li class="nav-item d-none d-sm-inline-block">
-        <a style="cursor: pointer;" (click)="redirectToHome()" class="nav-link">Inicio</a>
+        <a style="cursor: pointer;" (click)="redirectToHome()" class="nav-link"><b>INICIO</b></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a style="cursor: pointer;" class="nav-link" (click)="redirectToAbout()">Nosotros</a>
+        <a style="cursor: pointer;" class="nav-link" (click)="redirectToAbout()"><b>NOSOTROS</b> </a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a style="cursor: pointer;" class="nav-link" (click)="logMeOut()">Salir</a>
+        <a style="cursor: pointer;" class="nav-link" (click)="logMeOut()"><b>SALIR </b></a>
       </li>
     </ul>
 
@@ -150,10 +150,8 @@
                   <p>Página principal</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a [routerLink]="['/productos']" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Agregar Productos</p>
+              <li class="nav-item d-none d-sm-inline-block">
+                <a style="cursor: pointer;" (click)="redirectToproductos()" class="nav-link">Agregar Productos
                 </a>
               </li>
               <li class="nav-item">
@@ -261,3 +259,4 @@
 		</div>
     </div>
     </body-->
+   
