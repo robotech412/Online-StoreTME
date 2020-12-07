@@ -25,7 +25,7 @@
     "@angular/platform-browser-dynamic": "~10.1.6",
     "@angular/router": "~10.1.6",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "admin-lte": "^3.1.0-rc",
+    "admin-lte": "^3.0.5",
     "concurrently": "^5.3.0",
     "firebase": "^7.0.0 || ^8.0.0",
     "rxjs": "^6.6.3",
