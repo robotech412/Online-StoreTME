@@ -52,7 +52,7 @@ export class ProductoFormComponent implements OnInit {
     .subscribe(
       res => {
         console.log(res);
-        this.router.navigate(['/productos']);
+        this.router.navigate(['dashboard/productos']);
       },
       err => console.error(err)
     )

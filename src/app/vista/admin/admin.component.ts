@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {  Router } from '@angular/router';
+import {AuthService} from '../../shared/services/auth.service';
 
 @Component({
   selector: 'app-admin',
@@ -9,7 +10,7 @@ import {  Router } from '@angular/router';
 export class AdminComponent implements OnInit {
 
  // constructor() { }
-constructor(public router: Router){}
+constructor(public router: Router,public authSvc:AuthService){}
 
   ngOnInit(): void {
   }
@@ -21,6 +22,11 @@ constructor(public router: Router){}
     this.router.navigateByUrl('dashboard/about');
   }
   logMeOut() {
+    this.authSvc.logout();
     this.router.navigateByUrl('inicio');
+  }
+
+  redirectToproductos(){
+    this.router.navigateByUrl('dashboard/productos');
   }
 }

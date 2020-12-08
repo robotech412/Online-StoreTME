@@ -22,7 +22,7 @@ export class AuthService {
     return firebase.auth().signOut();
   }
 
-  //logout() {
-    //this.afAuth.signInWithEmailAndPassword.signOut();
-  //}
+  logout() {
+    this.afAuth.signOut();
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/shared/services/auth.service';
 
 
 import { ProductosService } from '../../services/productos.service';
@@ -9,10 +10,9 @@ import { ProductosService } from '../../services/productos.service';
   styleUrls: ['./productos.component.css'],
 })
 export class ProductosComponent implements OnInit {
-
   productos: any = [];
 
-  constructor(private productosService: ProductosService) { }
+  constructor(private productosService: ProductosService,public AuthSvc:AuthService) { }
 
   ngOnInit() {
     this.getProductos();
