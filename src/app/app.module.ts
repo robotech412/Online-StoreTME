@@ -35,7 +35,7 @@ import { LoginModule } from './vista/login/login.module';
 import { AdminModule } from './vista/admin/admin.module';
 
 import { ProductosService } from './services/productos.service'
-
+import { MessageService } from './services/message.service';
 
 @NgModule({
   declarations: [
@@ -64,7 +64,7 @@ import { ProductosService } from './services/productos.service'
     app_routing
   ],
   providers: [{ provide: BUCKET, useValue: 'gs://usuarios-da896.appspot.com' },
-ProductosService], //modulo de angular para usar cookies
+ProductosService,MessageService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

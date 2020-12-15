@@ -11,20 +11,7 @@ CREATE TABLE productos(
     tallas VARCHAR (50),
     cantidad INT,
     image VARCHAR (200),
-    fecha_ingreso TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    id_categ varchar(50)
+    fecha_ingreso TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 DESCRIBE productos;
-
-CREATE TABLE categoria(
-	id_categoria varchar(50) PRIMARY KEY
-
-);
-ALTER TABLE productos 
-ADD CONSTRAINT fk_id_categoria
-FOREIGN KEY(id_categ)
-REFERENCES categoria(id_categoria);
-
-INSERT INTO categoria(id_categoria)
-values ('Zapatos'),('Ropa'),('Reloj'),('Utilidades');
