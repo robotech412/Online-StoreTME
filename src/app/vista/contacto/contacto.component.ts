@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { MessageService } from 'src/app/services/message.service';
-//import swal from 'sweetalert';
 import Swal from 'sweetalert2';
 @Component({
   selector: 'app-contacto',

@@ -60,7 +60,6 @@
     "save": "^2.4.0",
     "save-dev": "0.0.1-security",
     "swal": "^0.1.0",
-    "sweetalert": "^2.1.2",
     "sweetalert2": "^10.12.5",
     "ts-node": "~8.3.0",
     "tslib": "^2.0.0",
