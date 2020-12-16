@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve & cd nodeMensajeria",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "server": "cd server && npm run dev",
-    "dev": "concurrently \"npm run server\" \"npm run start\""
+    "nodeMensajeria":"cd nodeMensajeria && npm run start",
+    "dev": "concurrently \"npm run nodeMensajeria\" \"npm run server\" \"npm run start\""
   },
   "private": true,
   "dependencies": {
