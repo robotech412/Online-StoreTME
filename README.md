@@ -1,6 +1,6 @@
 ![error](https://github.com/robotech412/Online-StoreTME/blob/development/images/logo_navbar.jpg)
 # Proyecto "TME"
-Proyecto de séptimo semestre de la materia de programación web
+Proyecto de séptimo semestre de la materia de programación web hecho en Angularjs con servicios en firebase y usando como base de datos MySQL
 
 
 ## 🗃️ Descripción
@@ -29,5 +29,17 @@ funcionalidad. Ya que ahora se encuentra en la fase de la vista.
 
 ## Vista Previa
 - Catalogo de zapatos.
-![error](https://github.com/robotech412/Online-StoreTME/blob/development/images/categoria_zapatos.png)
+![catalogo](https://github.com/robotech412/Online-StoreTME/blob/development/images/categoria_zapatos.png)
 
+
+## Requisitos de instalación
+- NPM
+- NodeJS
+- AngularJS
+- phpMyadmin
+
+## Instalación
+
+```
+npm install
+```
